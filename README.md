@@ -10,18 +10,18 @@ TODO:
 FEATURES:
 
 Misc:
-    - Tutorial
-    - Settings
-    - Saves
+- Tutorial
+- Settings
+- Saves
 
 Game Mechanics:
-    - Pathfinding
-    - Towers
-    - Damage calculation
-    - End State (Victory? Endless?)
-    - Map-maker
+- Pathfinding
+- Towers
+- Damage calculation
+- End State (Victory? Endless?)
+- Map-maker
 
 Controls:
-    - Camera Movement
-    - Menus
-    - 
+- Camera Movement
+- Menus
+
