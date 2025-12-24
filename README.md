@@ -7,7 +7,7 @@ TODO:
 - How will the map be represented in terms of data structures? I'm currently thinking of just using a 2D matrix made of arrays.
 - Storing a map
 
-FEATURES:
+PLANNED FEATURES:
 
 Misc:
 - Tutorial
