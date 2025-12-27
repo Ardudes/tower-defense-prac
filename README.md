@@ -15,13 +15,13 @@ Misc:
 - Saves
 
 Game Mechanics:
-- Pathfinding
-- Towers
-- Damage calculation
+- Pathfinding (done, used BFS)
+- Towers (...)
+- Damage calculation (...)
 - End State (Victory? Endless?)
-- Map-maker
+- Map-maker (WIP)
 
 Controls:
-- Camera Movement
-- Menus
+- Camera Movement (use camera())
+- Menus (just draw them last so they go on top)
 
