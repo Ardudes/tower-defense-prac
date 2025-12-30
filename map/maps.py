@@ -21,7 +21,7 @@ type Map = list[list[str]]
 type pair = tuple[int, int]
 
 def read_map(filename: str) -> Map:
-    # searches for a specific directory given a filename
+    # searches the levels directory given a filename
     current_dir = Path(__file__).parent
     main_dir = current_dir.parent
     path = Path(f"{main_dir}/levels/{filename}.lvl")
@@ -37,7 +37,6 @@ def read_map(filename: str) -> Map:
 
     return ret
 
-
 def save_map(filename: str, m: Map):
     current_dir = Path(__file__).parent
     main_dir = current_dir.parent
@@ -46,6 +45,22 @@ def save_map(filename: str, m: Map):
     with open(path, 'w') as f:
         for row in m:
             f.write(f"{''.join(row)}\n")
+
+def clean_map(m: Map):
+    paths = pathfind(m)
+    r = len(m)
+    c = len(m[0])
+    ret: Map = [['_'] * c for _ in range(r)]
+    for path in paths:
+        si, sj = path[0]
+        m[si][sj] = 'S'
+        for i in range(1, len(path) - 1):
+            ci, cj = path[i]
+            m[ci][cj] = '#'
+        ei, ej = path[-1]
+        m[ei][ej] = 'E'
+
+    return ret
 
 def print_map(m: Map):
     for row in m:

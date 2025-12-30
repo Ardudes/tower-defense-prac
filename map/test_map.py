@@ -1,5 +1,4 @@
 import os
-import pyxel
 from pathlib import Path
 from maps import save_map, read_map, pathfind, Map
 
@@ -21,7 +20,4 @@ def test_save_read():
 
 def test_pathfind():
     m = read_map("pathfind_test")
-    pathfind(m)
-
-def test_map_pyxel():
-    
+    print(pathfind(m))
