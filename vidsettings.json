@@ -1,5 +1,6 @@
 {
-    "SCREEN_WIDTH" : 1600,
-    "SCREEN_LENGTH" : 1200,
-    "TILE_SIZE" : 8
+    "SCREEN_WIDTH" : 1200,
+    "SCREEN_LENGTH" : 800,
+    "TILE_SIZE" : 16,
+    "SCALE" : 3
 }

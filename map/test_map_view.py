@@ -1,11 +1,9 @@
 from map_view import MapView
-from maps import read_map, Map, clean_map
 import pyxel
 from pathlib import Path
 
 def test_map_view():
     mv = MapView('pathfind_test')
-    m: Map = read_map('pathfind_test')
     # print(mv.display_map)
     w = mv.settings["SCREEN_WIDTH"]
     l = mv.settings["SCREEN_LENGTH"]

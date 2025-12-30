@@ -123,8 +123,8 @@ def pathfind(m: Map) -> list[list[pair]]:
             curr_path: list[pair] = []
             curr_loc: pair = starts[i]
             while curr_loc != None:
-                curr_path.append(curr_loc)
-                curr_loc: pair = prevs[(curr_loc)]
+                curr_path.append(curr_loc) # type: ignore
+                curr_loc: pair = prevs[(curr_loc)] # type: ignore
             paths.append(curr_path)
             curr_path = []
 
